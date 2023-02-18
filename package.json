@@ -16,7 +16,7 @@
   "contributes": {
     "commands": [{
       "command": "moskhar-structure.helloWorld",
-      "title": "Hello World"
+      "title": "Moskhar: Create Project"
     }]
   },
   "scripts": {

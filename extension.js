@@ -19,9 +19,13 @@ function activate(context) {
 	// The commandId parameter must match the command field in package.json
 	let disposable = vscode.commands.registerCommand('moskhar-structure.helloWorld', function () {
 		// The code you place here will be executed every time your command is executed
+		
 
 		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from Moskhar Structure!');
+		vscode.window.showInformationMessage('Running Program!');
+		const quickPick = vscode.window.createQuickPick();
+		quickPick.items = [{ label: 'Type Standar' },{ label: 'Type Complex' }];
+		quickPick.show();
 	});
 
 	context.subscriptions.push(disposable);
